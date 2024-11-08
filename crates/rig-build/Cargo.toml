@@ -1,0 +1,16 @@
+[package]
+name = "rig-build"
+version = "0.1.0"
+edition = "2021"
+license = "MPL-2.0"
+
+[[bin]]
+name = "rig"
+path = "src/main.rs"
+
+[dependencies]
+rig-llvm-sys = { path = "../rig-llvm-sys" }
+blake3 = { version = "1.5.4", features = ["pure"] }
+
+[build-dependencies]
+bindgen = { version = "0.70.1", default-features = false }

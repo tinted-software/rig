@@ -1,0 +1,14 @@
+[package]
+name = "rig-llvm-sys"
+version = "0.1.0"
+edition = "2021"
+license = "MPL-2.0"
+
+[lib]
+name = "llvm_sys"
+
+[build-dependencies]
+bindgen = { version = "0.70.1", default-features = false }
+cc = { version = "1.1.36", features = ["parallel"] }
+
+[features]
